@@ -1,24 +1,24 @@
-const atacante = prompt("Qual o nome do atacante? ")
-const poderDeAtaque = parseFloat(prompt("Qual é o seu poder de ataque? "))
+const nome1 = prompt("Qual é o nome do seu personagem? ")
+const ataque = parseFloat(prompt("Qual é o poder de ataque do seu personagem? "))
 
-const defensor = prompt("Qual o nome do defensor? ")
-let pontosDeVida = parseFloat(prompt("Quantos pontos de vida ele possui"))
-const poderDeDefesa = parseFloat(prompt("Qual é o seu poder de defesa? "))
-const possuiEscudo = prompt("Ele possui um escudo? (Sim/Não) ")
+const nome2 = prompt("Qual é o nome do personagem rival? ")
+let life = parseFloat(prompt("Quantos pontos de vida ele tem? "))
+const defesa = parseFloat(prompt("Qual é o poder de defesa do personagem rival? "))
+const escudo = prompt("Ele possui escudo?[Sim/Não] ")
 
 let danoCausado = 0
 
-if (poderDeAtaque > poderDeDefesa && possuiEscudo === "Não") {
-    danoCausado = poderDeAtaque - poderDeDefesa
-
-} else if (poderDeAtaque > poderDeDefesa && possuiEscudo === "Sim") {
-    danoCausado = ("poderDeAtaque - poderDeDefesa") / 2 
+if(ataque > defesa && escudo === "Não") {
+    danoCausado = ataque - defesa
+} else if (ataque > defesa && escudo === "Sim") {
+    danoCausado = (ataque - defesa) / 2
 }
 
-pontosDeVida -= danoCausado
+life -= danoCausado
 
-alert(atacante + " causou " + danoCausado + " pontos de dano em " + defensor) 
-
-alert(atacante + "\nPoder de ataque: " + poderDeAtaque +" \n\n" +
-defensor + "\nPontos de vida: " + pontosDeVida +
-"\nPoder de defesa: " + poderDeDefesa + "\nPossui escudo: " + possuiEscudo)
+alert(nome1 + " causou " + danoCausado + " pontos de dano em " + nome2)
+alert(
+    nome1 + "\nPoder de ataque: " + ataque + "\n\n" +
+    nome2 + "\nPontos de vida: " + life +
+    "\nPontos de defesa: " + defesa + "\nPossui escudo: " + escudo
+) 
