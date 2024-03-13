@@ -13,7 +13,7 @@ const personagens = [
     //nomes.push(personagens[i].nome)
 //  }
 
-// map: permite obter um novo array a partir de um array existenste
+// map: permite obter um novo array a partir de um array existente
 const nomes = personagens.map(function (personagens) {
     return personagens.nome
 })
@@ -55,3 +55,11 @@ const racas = personagens.reduce(function (valorAcumulado, personagem) {
 }, {})
 
 console.log(racas)
+
+// sort: ordena os elementos de um array a partir de comparações entre duplas de elementos
+const personagnesOrdenados = personagens.slice().sort(function (a, b) {
+    return b.nivel - a.nivel
+})
+
+console.log(personagens)
+console.log(personagnesOrdenados)
