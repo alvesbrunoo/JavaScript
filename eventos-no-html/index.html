@@ -8,23 +8,24 @@
 <body>
     <form>
         <label for="onMouseEnter">Entrada do Mouse:</label>
-        <input type="text" id="onMouseEnter">
+        <input type="text" id="onMouseEnter" onmouseenter="mouseEvent()">
         <br><br>
 
         <label for="onChange">Mudança de valor:</label>
-        <input type="text" id="onChange">
+        <input type="text" id="onChange" onchange="changeEvent()">
         <br><br>
 
         <label for="onFocus">Entrada de Foco:</label>
-        <input type="text" id="onFocus">
+        <input type="text" id="onFocus" onfocus="focusEvent()">
         <br><br>
 
         <label for="onBlur">Saída de Foco:</label>
-        <input type="text" id="onBlur">
+        <input type="text" id="onBlur" onblur="blurEvent()">
         <br><br>
 
-        <button>Clique-me!</button>
-
+        <button onclick="clickEvent()">
+            Clique-me!
+        </button>
     </form>
     
     <script src="index.js"></script>
