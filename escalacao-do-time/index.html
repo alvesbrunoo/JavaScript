@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Player scale</h1>
+    <hr>
+
+    <h2>Player scale</h2>
+    <form>
+        <label for="position">Position: </label>
+        <input type="text" id="position">
+        <label for="name">Name: </label>
+        <input type="text" id="name">
+        <label for="number">Number: </label>
+        <input type="text" id="number">
+        <button onclick="addPlayer()">Climbing</button>
+    </form>
+
+    <h2>Remove</h2>
+    <form>
+        <label for="numbertoRemove">Number: </label>
+        <input type="number" id="numberToRemove">
+        <button onclick="removePlayer()">Remove</button>
+    </form>
+
+    <h2>Team: </h2>
+    <ul id="team-list"></ul>
+
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
