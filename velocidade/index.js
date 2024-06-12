@@ -1,12 +1,13 @@
-const veiculo1 = prompt("Qual é o veículo que você está dirigindo? ")
-const vel1 = parseFloat(prompt("Qual a velocidade do seu veículo? "))
-const veiculo2 = prompt("Qual é o veículo que você está dirigindo? ")
-const vel2 = parseFloat(prompt("Qual a velocidade do seu veículo? "))
+const vei1 = prompt('Digite o nome do seu veículo')
+const vel1 = parseFloat(prompt('Digite a velocidade do primeiro veículo')) 
+
+const vei2 = prompt('Digite o nome do segundo veículo')
+const vel2 = parseFloat(prompt('Digite a velocidade do segundo veículo'))
 
 if (vel1 > vel2) {
-   alert(veiculo1 + " é mais rápido do que " + veiculo2)
+   alert(vei1 + ' é mais rápido do que o ' + vei2)
 } else if (vel1 < vel2) {
-   alert(veiculo2 + " é mais rápido do que " + veiculo1)
+   alert(vei2 + ' é mais rápido do que o ' + vei1)
 } else {
-   alert(veiculo1 + " e " + veiculo2 +  " tem a mesma velocidade ")
+   alert(vei1 + ' e ' + vei2 + ' possuem a mesma velocidade ')
 }
