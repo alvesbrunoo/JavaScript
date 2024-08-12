@@ -1,46 +1,38 @@
-const medida = parseFloat(prompt('Insira a medida em metros:'))
+const medida = parseFloat(prompt('Insira uma medida em metros:'))
 
-const unidade = prompt(
-    'Para qual unidade deseja converte?' +
-    '\n1.milímetro (mm)' +
-    '\n2.centímetro (cm)' +
-    '\n3.decímetro (dm)' +
-    '\n4.decâmetro (dam)' + 
-    '\n5.hectômetro (hm)' +
-    '\n6.quilômetro (km)' + 
+const unidade = prompt('Para qual medida você deseja converter?\n' +
+    '\n1.Milímetro (mm):' +
+    '\n2.Centímetro (cm):' +
+    '\n3.Decímetro (mm):' +
+    '\n4.Decâmetro (dam):' +
+    '\n5.Hectômetro (hm):' +
+    '\n6.Quilômetro (km):' +
     '\n7.Sair'
 )
 
-switch(unidade) {
+switch (unidade) {
     case '1':
-        alert('Resultado: ' + medida + 'm = ' + medida * 1000 + 'mm')
+        alert('A medida em milímetro é ' + medida * 1000)
         break
-
-     case '2':
-        alert('Resultado: ' + medida + 'm = ' + medida * 100 + 'cm')
+    case '2':
+        alert('A medida em centímetros é ' + medida * 100)
         break
-        
     case '3':
-        alert('Resultado: ' + medida + 'm = ' + medida * 10 + 'dm')
+        alert('A medida em centímetros é ' + medida * 10)
         break
-        
     case '4':
-        alert('Resultado: ' + medida + 'm = ' + medida / 10 + 'dam')
-           break
-        
+        alert('A medida em centímetros é ' + medida / 10)
+        break
     case '5':
-        alert('Resultado: ' + medida + 'm = ' + medida / 100 + 'hm')
+        alert('A medida em centímetros é ' + medida / 100)
         break
-
     case '6':
-        alert('Resultado: ' + medida + 'm = ' + medida / 1000 + 'km')
+        alert('A medida em centímetros é ' + medida / 1000)
         break
-
     case '7':
+        alert('Saindo...')
         break
-
     default:
-        alert('Opção inválida')
+        alert('Opção inválida!')
         break
-} 
-
+}
