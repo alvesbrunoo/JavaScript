@@ -1,4 +1,4 @@
-const palavra = prompt('Digite sua palavra:')
+const palavra = prompt('Digite uma palavra:')
 let palavraInvertida = ''
 
 for (let i = palavra.length - 1; i >= 0; i-- ) {
@@ -10,3 +10,4 @@ if (palavra === palavraInvertida) {
 } else {
     alert(palavra + ' não é um palíndromo\n\n' + palavra + ' !== ' + palavraInvertida)
 }
+

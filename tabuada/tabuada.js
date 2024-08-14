@@ -6,3 +6,4 @@ for (let fator = 1; fator <= 20; fator++) {
 }
 
 alert('O resultado da tabuada do ' + numero + ': \n' + resultado)
+
