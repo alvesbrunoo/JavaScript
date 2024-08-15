@@ -1,37 +1,19 @@
-  // Obter um elemento único a partir do seu id
-  function show() {
-    const contactList = document.getElementById('contact-list')
-    console.log(contactList)
+function show() {
+  const contactList = document.getElementById('contact-list')
+  console.log(contactList)
 
+  const liElement = document.getElementsByTagName('li')
+  console.log(liElement)
 
-    
-  // Obter vários elementos (HTMLCollection) a partir de um nome de tag
-    const liElements = document.getElementsByTagName('li')
-    console.log(liElements)
+  const contacInput = document.getElementsByClassName('contact-input')
+  console.log(contacInput)
 
+  const contact1 = document.getElementsByName('contact1')
+  console.log(contact1)
 
-    // Obter vários elementos (HTMLCollection) a partir de uma classe
-    const contactInputs = document.getElementsByClassName('contact-input')
-    console.log(contactInputs)
+  const contacts = document.querySelectorAll('#contact-list > li > label')
+  console.log(contacts)
 
-    // Obter vários elementos (NodeList) a partir do atributo name
-    const contact1 = document.getElementsByName('contact1')
-    console.log(contact1)
-
-    // Obter vários elementos (NodeList) a partir de uma query (semelhante aos seletores do CSS)
-    const contacts = document.querySelectorAll('#contacts > li > label')
-    console.log(contacts)
-
-    // Obter um elemento a partir de uma query (o primeiro elemento a corresponder)
-    const contact = document.querySelector('#contact-list > li > label')
-    console.log(contact)
-    console.log(contact.textContent)
-
-
-
-
-
-     
-
+  const contact = document.querySelector('#contact-list > li > label')
+  console.log(contact)
 }
-
