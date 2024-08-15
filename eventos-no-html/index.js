@@ -1,13 +1,13 @@
-function mouseEvent() {
+function mouseEnterEvent() {
     console.log('mouse entered')
 }
 
 function changeEvent() {
-    console.log('value change')
+    console.log('value changed')
 }
 
 function focusEvent() {
-    console.log('gained focus')
+    console.log('focus entered')
 }
 
 function blurEvent() {
@@ -15,5 +15,6 @@ function blurEvent() {
 }
 
 function clickEvent() {
-    alert('clicked')
+    console.log('clicked')
 }
+
