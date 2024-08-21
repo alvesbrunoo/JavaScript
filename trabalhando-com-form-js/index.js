@@ -24,11 +24,11 @@ form.addEventListener("submit", function (ev) {
   })
 
   alert(
-    "Order realized!" +
-    "\nClient name: " + name +
-    "\nDelivery address: " + address +
-    "\nBread type: " + breadType +
-    "\nFilling: \n - " + main + "\n" + salad +
-    "Observations: " + observations
+    "Pedido Realizado!" +
+    "\nNome do cliente: " + name +
+    "\nEndereço de entrega: " + address +
+    "\nTipo de pão: " + breadType +
+    "\nRecheio: \n - " + main + "\n" + salad +
+    "Observações: " + observations
   )
 })
