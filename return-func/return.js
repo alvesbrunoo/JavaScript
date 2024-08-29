@@ -3,47 +3,53 @@ function calcularMedia(a, b) {
     return media
 }
 
-const resultado = calcularMedia(5, 9)
-console.log(resultado)
+// const resultado = calcularMedia(7, 2)
+console.log(calcularMedia(7, 2))
 
-function  criarProduto(nome, preco) {
+function criarProduto(nome, preco) {
     const produto = {
         nome,
         preco,
-        estoque: 1
+        estoque: '1'
     }
     return produto
-    
 }
-const notebook = criarProduto("Notebook Intel Core i3 8GB", 3000)
+
+// const nomeProduto = criarProduto
+// console.log(nomeProduto("Smartphone Samsung Galaxy", 1000))
 console.log(criarProduto("Smartphone Samsung Galaxy", 1000))
 
 function areaRetangular(base, altura) {
     return base * altura
 }
-console.log(areaRetangular(3, 5))
+
+console.log(areaRetangular(9, 8))
 
 function areaQuadrada(lado) {
     return areaRetangular(lado, lado)
 }
-console.log(areaQuadrada(8))
 
-function olaMundo() {
-    let texto = "..."
-    texto = "Olá, mundo!"
-    console.log(texto)
+console.log(areaQuadrada(7))
+
+
+function ola() {
+    let texto = '...'
+    texto = 'Olá, mundo'
     return texto
-    
 }
-console.log(olaMundo())
 
-function maioridade(idade) {
+// const palavra = ola
+// console.log(palavra())
+console.log(ola())
+
+
+function maiorIdade(idade) {
     if (idade >= 18) {
-        return "Maior de idade"
+        return 'Maior de idade'
     } else {
-        return "Menor de idade"
+        return 'Menor de idade'
     }
-
 }
-console.log(maioridade(20))
-console.log(maioridade(13))
+
+console.log(maiorIdade(30))
+console.log(maiorIdade(10))
